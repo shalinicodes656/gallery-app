@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+
+<link rel="stylesheet" href="style3.css">
+
+</head>
+<body>
+
+<h1>📸 My Image Gallery</h1>
+<p>Explore Nature, Food and Animal Photography</p>
+
+<div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('food')">Food</button>
+    <button onclick="filterImages('animal')">Animal</button>
+</div>
+
+<div class="gallery">
+
+<img src="https://picsum.photos/id/1015/600/400" class="nature" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1016/600/400" class="nature" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1039/600/400" class="animal" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1025/600/400" class="animal" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1080/600/400" class="food" onclick="openImage(this)">
+
+<img src="https://picsum.photos/id/1081/600/400" class="food" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1060/600/400" class="nature" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1040/600/400" class="nature" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1069/600/400" class="food" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1070/600/400" class="food" onclick="openImage(this)">
+
+<img src="https://picsum.photos/id/237/600/400" class="animal" onclick="openImage(this)">
+<img src="https://picsum.photos/id/219/600/400" class="animal" onclick="openImage(this)">
+<img src="https://picsum.photos/id/431/600/400" class="food" onclick="openImage(this)">
+<img src="https://picsum.photos/id/433/600/400" class="food" onclick="openImage(this)">
+<img src="https://picsum.photos/id/1043/600/400" class="nature" onclick="openImage(this)">
+
+</div>
+
+<div class="lightbox" id="lightbox">
+
+<span class="close" onclick="closeImage()">&times;</span>
+
+<button class="prev" onclick="prevImage()">❮</button>
+
+<img id="lightbox-img">
+
+<button class="next" onclick="nextImage()">❯</button>
+
+</div>
+
+<script src="script2.js"></script>
+
+</body>
+</html>
